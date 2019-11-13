@@ -8,13 +8,12 @@
 
 listanome=[]
 listanotas=[]
+for i in range (0,10)
+    for i in range(0,4):
+        listanotas.append(input('Digite as notas: '))  
 
-for i in range(0,4):
-    listanotas.append(input('Digite as notas: '))
-   
-
-for i in range(0,2):
-     listanome.append(input('Digite a lista de nomes: '))
+    for i in range(0,1):
+        listanome.append(input('Digite a lista de nomes: '))
 
 print(listanotas)  
 print(listanome)   
