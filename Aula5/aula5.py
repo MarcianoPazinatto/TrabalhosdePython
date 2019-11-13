@@ -14,6 +14,7 @@ elif (nota4>nota1)&(nota4>nota2)&(nota4>nota3):
 elif(nota1==nota2)&(nota2==nota3)&(nota3==nota4):
     print('notas iguais')    
    
+   
 
 if (nota1<nota2)&(nota1<nota3)&(nota1<nota4):
     print(f'nota {nota1} é menor')
