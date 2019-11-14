@@ -4,6 +4,7 @@ lista3=[1,2,3,4,5]
 lista4=(1,'Maykon',1.3)
 
 
+
 print(lista1)
 print(lista2)
 print(lista3)
