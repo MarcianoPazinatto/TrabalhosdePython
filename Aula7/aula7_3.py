@@ -20,5 +20,5 @@ for i in range(1,3):
 print(jogadores)
 print('\n\n')
 
-for inf in jogadores:#dentro do jogadores, imprime os dados dos jogadores, ,ediante ao foreach
+for inf in jogadores:#dentro do jogadores, imprime os dados dos jogadores, mediante ao for each
     print(f"Nome do jogador: {jogador['nome']}-Posição: {jogador['pos']}-Número: {jogador['num']}-Perna: {jogador['per']}")
