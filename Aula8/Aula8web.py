@@ -9,3 +9,5 @@ def inicio():
 
 
 app.run()
+
+#app.run(host='192.168.0.120, port=80)
