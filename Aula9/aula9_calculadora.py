@@ -3,7 +3,7 @@
 #Calcule a soma entre os dois numeros atravez de um método
 #Calcule a subtração entre os dois numeros atravez de um método
 #Calcule a multiplicação entre os dois numeros atravez de um método
-#Calcule a divisão inteira entre os dois numeros atravez de um método
+#Calcule a divisão inteira entre os dois   numeros atravez de um método
 #Calcule a divisão fracionada entre os dois numeros atravez de um método
 #Calcule a resto da divisão entre os dois numeros atravez de um método
 #Calcule a raiz entre os dois numeros atravez de um método
