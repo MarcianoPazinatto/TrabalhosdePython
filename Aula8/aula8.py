@@ -1,10 +1,10 @@
 nome='marciano' ' ' 'Pazinatto'
 print((nome).count('a'))#conta quantos caracteres tem 
-print((nome).lower())#diminui os caracteres 
-print((nome).upper())#aumenta os caracteres
-print((nome).split(' '))#remove o que for colocado dentro dos parenteses 
+print((nome).lower())#diminui os carácteres 
+print((nome).upper())#aumenta os carácteres
+print((nome).split(' '))#remove o que for colocado dentro dos parênteses 
 print((nome).strip())
-print((nome).capitalize())#deixa o primeiro caracter da palavra em maiúsculo
+print((nome).capitalize())#deixa o primeiro carácter da palavra em maiúsculo
 
 
 pessoa=[" ","boa ", "Bonita", "barata "]
