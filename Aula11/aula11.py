@@ -12,5 +12,3 @@ iss_1=float(input('Digite a porcentagem a ser tributada em %'))
 iss=iss_1/100
 
 print(f'O valor do imposto da empresa sobre o serviço  de R${servico} calculando a porcentagem de %{iss_1} é R${calculoiss(iss,servico)}')
-
-taxa=(investimento*100)/cal
