@@ -2,10 +2,9 @@
 #Cadastro de Playlist
 #lendo música, artista e album
 
-from faixa import criar_faixa, salvar_faixa
-
 #######################################################################IMPORTANDO DADOS DAS FUNÇÕES
 
+from faixa import criar_faixa, salvar_faixa, ler_faixa
 
 
 #######################################################################INSERINDO DADOS
@@ -18,3 +17,7 @@ album= input('Digite o album: ')
 
 faixa=criar_faixa(musica, album, artista)
 salvar_faixa(faixa)
+lista=ler_faixa()
+
+for f in lista:
+    print(f"{faixa['musica']} {faixa['album']} {faixa['artista']}")
