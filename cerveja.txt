@@ -1,1 +1,3 @@
-pilsen;skol;7.0
+escura;malzbier;7.0
+pilsen;skol;9.0
+lager;austria;7.0

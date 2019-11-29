@@ -22,9 +22,9 @@ pessoa={'nome1':nome1, 'sobrenome':sobrenome, 'idade':idade}
 
 salvar_pessoa(pessoa)
 
-#ler()
+#ler() 
 
 #print(ler())
-lista=ler()
+#lista=ler()
 for p in ler():
     print(f"{p['nome1']}-{p['sobrenome']}-{p['idade']}")

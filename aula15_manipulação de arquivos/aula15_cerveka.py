@@ -1,5 +1,5 @@
 def salvar_cerveja(dicio_cerveja):
-    arq=open('cerveja.txt','w')
+    arq=open('cerveja.txt','a')
     arq.write(f"{dicio_cerveja['tipo']};{dicio_cerveja['marca']};{dicio_cerveja['teor']}\n")
     arq.close()
 
