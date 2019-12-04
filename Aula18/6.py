@@ -11,3 +11,55 @@
 
 # 3 - Faça uma terceira função que ao digitar o código do participante ele imprima o nome do participante, 
 # o valor do ingresso, e em caso de menores de idade apareça o texto "Entrada Proibida!"
+
+# arquivo=open('casdastro.txt','a')
+# #conteudo=arquivo.read()
+# for linha in arquivo
+#     #print(linha)
+# campos=linha.split    
+
+# contador=0
+
+# for campo in campos:
+#     dicio[campo]=dados[contador]
+#     contador+=1
+# registros.append    
+
+def ler_cadastro():
+    arquivo=open('cadastro.txt','r')
+    lista=[]
+    for pessoas in arquivo:
+        pessoas = pessoas.strip().split(';')
+        dicionario={'codigo':pessoas[0],'nome':pessoas[1],'sexo':pessoas[2],'idade':pessoas[3]}
+    lista.append(dicionario)
+    arquivo.close()
+    return lista
+
+print(ler_cadastro())    
+
+def lista_festa(lista_de_entradas):
+    lista_homens=[]
+    lista_mulheres=[]
+
+    for pessoa in lista_de_entradas:
+        if int(pessoa['idade'])>=18:
+            if pessoa['sexo']=='f':
+                lista_mulheres.append(pessoa)
+            else:
+                lista_homens.append(pessoa)
+        salvar(lista_homens,'homens')
+        salvar(lista_mulheres,'mulheres') 
+
+def salvar(lista,nome):
+    arquivo=open('cadastro{nome}.txt','a')
+    for pessoa in lista:
+        texto=f"{pessoa['codigo']};{pessoa['nome']};{pessoa['sexo']};{pessoa['idade']}\n"
+        arquivo.write(texto)
+    arquivo.close()                   
+
+def consulta(lista_consulta_funcao,numero):
+    for lista_consulta in lista_consulta_funcao:
+        if int(lista_consulta['consulta'])
+    if int(lista_consulta['idade'])>=18:
+        if lista_consulta['sexo']=='f':
+            print()

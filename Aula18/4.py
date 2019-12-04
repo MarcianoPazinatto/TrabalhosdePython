@@ -19,21 +19,26 @@ cerveja = (('marca', 'tipo', 'ibu','preço'),
 # 1.2 Crie uma função que receba esta tupla e devolva uma lista com um dicionários referenciando cada uma destas 
 # cervejas.
 
-cabe = cerveja[0]# pega apenas a primeira parte
-dados= cerveja[1:]#pega a segunda parte em diante
+# cabe = cerveja[0]# pega apenas a primeira parte
+# dados= cerveja[1:]#pega a segunda parte em diante
 
-for dados_cerveja in dados:
-    print(f'{cabe[0]},{dados_cerveja[0]}')
-    print(f'{cabe[1]},{dados_cerveja[1]}')
-    print(f'{cabe[2]},{dados_cerveja[2]}')    
-    print(f'{cabe[3]},{dados_cerveja[3]}')    
+# for dados_cerveja in dados:
+#     print(f'{cabe[0]},{dados_cerveja[0]}')
+#     print(f'{cabe[1]},{dados_cerveja[1]}')
+#     print(f'{cabe[2]},{dados_cerveja[2]}')    
+#     print(f'{cabe[3]},{dados_cerveja[3]}')    
 
-
+# print('\n\n')
    
+
+
 def cerv(cerveja):
     lista=[]
     for j in range(1,5):
-        dicionario={'marca':cerveja[j][0]}, {'tipo':cerveja[j][1]}, {'ibu':cerveja[j][2]}, {'preço':cerveja[j][3]}
+        dicionario={'marca':cerveja[j][0],'tipo':cerveja[j][1], 'ibu':cerveja[j][2], 'preço':cerveja[j][3]}
         lista.append(dicionario)
-    return cerve    
-          
+    return lista   
+
+print(cerv(cerveja))  
+
+  

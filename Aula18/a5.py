@@ -15,7 +15,7 @@
 lista = [
           ['mamão','abacaxi','laranja','uva','pera','maçã','vergamota'],
           ['skol','kaiser','sol','schin','brahma','itaipava','bavaria'],
-          ['alface crespa', 'alface lisa','rucula','almerão','repolho','salsinha',],
+          ['alface crespa', 'alface lisa','rucula','almerão','repolho','salsinha','banana'],
           ['rizoto','macarronada','polenta','guizado','dobradinha','revirado','pure'],
           ['feijão', 'erviha', 'lentilha','vagem','feijão branco','gão de bico','soja'],
           ['agua','cachoeira','rio','lagoa','sanga','brejo','laguna'],
@@ -23,3 +23,17 @@ lista = [
           ['carro','moto','vespa','caminhão','sprinter','kombi','fusca'],
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
+
+contador=0
+for listainterna in lista:
+    contador+=1
+    print(f'############# posição {contador} ##################')
+    for i in listainterna:        
+      print(i)  
+      for b in i:
+        print(b)           
+
+#lista_iten(lista)
+#if i != None:    
+
+
