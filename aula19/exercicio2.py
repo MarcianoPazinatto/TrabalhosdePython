@@ -18,4 +18,28 @@ pess   = [  ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'João'   ,'Joaqu
 #
 #  3 - Imprima a lista resultante com um for imprimindo um dicionário em cada linha 
 # (usando o f-string)
+#####################################1
+def pessoas(pess):
+    lista = []
+    for p in range(len(pess[0])):#indice das pessoas
+        dicionario = {}
+        for i in range(len(pess)):#indice do cabeçalho
+                dicionario[cab[i]]=pess[i][p]
+        if int(dicionario['idade']) >= 18:
+                lista.append(dicionario)
+    return lista
+print(pessoas(pess))  
+
+a=pessoas(pess)
+print(f'\n\n')
+#####################################2
+for p in a:
+        print(p)
+
+print(f'\n\n')
+#####################################3
+for pa in a:
+        print(f'{pa}')
+
+
 

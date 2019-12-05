@@ -23,5 +23,14 @@
 #           Homens acima de 18:  "Olá {nome}! Já experimentou nossa cerveja? alto teor alcoolico
 #                                                com o dobro do amargor!!!"
 #      Lembre-se: É importante que apareça a frase. Pois a mesma será encaminhada por e-mail pela equipe de marketing
+def le():
+    ar=open('cadastro1.txt','r')
+    lista=[]
+    for pessoas in ar:
+        pessoas=pessoas.strip().split(';')
+        dicionario={'codigo':pessoas[0],'nome':pessoas[1],'sexo':pessoas[2],'email':pessoas[3],'telefone':pessoas[4]}
+        lista.append(dicionario)
+    arquivo.close()    
+    return lista
 
-
+print(le())

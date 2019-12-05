@@ -22,15 +22,27 @@ cadastroHBSIS = ['nome',   ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'J
 
 
 #####1#####
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][0]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][0]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][0]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][0]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][1]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][1]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][1]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][1]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][2]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][2]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][2]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][2]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][3]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][3]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][3]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][4]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][4]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][4]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][4]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][5]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][5]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][5]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][5]} ")
-# print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][6]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][6]} {cadastroHBSIS[4]}:{cadastroHBSIS[5][6]} {cadastroHBSIS[6]}:{cadastroHBSIS[7][6]} ")
+print(f"{cadastroHBSIS[0]}: {cadastroHBSIS[1][0]} {cadastroHBSIS[2]}: {cadastroHBSIS[3][0]}")
+print(f'{cadastroHBSIS[6]} de {cadastroHBSIS[1][4]} é {cadastroHBSIS[7][4]} anos')
+print(f'{cadastroHBSIS[4]} de {cadastroHBSIS[1][3]} é {cadastroHBSIS[5][3]}')
 
 #####2#####
 
-for i in cadastroHBSIS:
-    print(f'{cadastroHBSIS[1]}')
+for nomes in cadastroHBSIS[1]:
+    print(nomes)
+
+#####3#####
+# cadastroHBSIS = ['nome',   ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'João'   ,'Joaquim'],
+#                 'telefone',['4799991','4799992','4799993','4799994','4799995','4799996','4799997'],
+#                 'email',   ['a@a.com','b@b.com','c@c.com','d@d.com','e@e.com','f@f.com','g@g.com'],
+#                 'idade',   ['18'     ,'25'     ,'40'     ,'16'     ,'15'     ,'19'     ,'17'     ]
+#                 ]
+
+def perc(cadastroHBSIS):
+    lista=[]
+    for j in range(1,7,2):
+        dicionario={'nome':cadastroHBSIS[1][j],'telefone':cadastroHBSIS[3][j], 'email':cadastroHBSIS[5][j], 'idade':cadastroHBSIS[7][j]}
+        lista.append(dicionario)
+    return lista
+
+print(perc(cadastroHBSIS))  
