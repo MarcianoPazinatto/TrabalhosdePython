@@ -18,12 +18,7 @@
 #     #print(linha)
 # campos=linha.split    
 
-# contador=0
 
-# for campo in campos:
-#     dicio[campo]=dados[contador]
-#     contador+=1
-# registros.append    
 
 def ler_cadastro():
     arquivo=open('cadastro.txt','r')
@@ -35,31 +30,43 @@ def ler_cadastro():
     arquivo.close()
     return lista
 
-print(ler_cadastro())    
-
 def lista_festa(lista_de_entradas):
-    lista_homens=[]
-    lista_mulheres=[]
+   lista_homens = []
+   lista_mulheres = []
 
-    for pessoa in lista_de_entradas:
-        if int(pessoa['idade'])>=18:
-            if pessoa['sexo']=='f':
-                lista_mulheres.append(pessoa)
-            else:
-                lista_homens.append(pessoa)
-        salvar(lista_homens,'homens')
-        salvar(lista_mulheres,'mulheres') 
+   for pessoa in lista_de_entradas:
+      if int(pessoa['idade']) >= 18:
+         if pessoa['sexo'] == 'f':
+            lista_mulheres.append(pessoa)
+         else:
+            lista_homens.append(pessoa)
+
+   salvar(lista_homens,'homens')
+   salvar(lista_mulheres,"mulheres")
 
 def salvar(lista,nome):
-    arquivo=open('cadastro{nome}.txt','a')
-    for pessoa in lista:
-        texto=f"{pessoa['codigo']};{pessoa['nome']};{pessoa['sexo']};{pessoa['idade']}\n"
-        arquivo.write(texto)
-    arquivo.close()                   
+   arquivo = open(f'cadastro{nome}.txt','a')
+   for pessoa in lista:
+      texto = f"{pessoa['codigo']};{pessoa['nome']};{pessoa['sexo']};{pessoa['idade']}\n"
+      arquivo.write(texto)
+   arquivo.close()
 
 def consulta(lista_consulta_funcao,numero):
-    for lista_consulta in lista_consulta_funcao:
-        if int(lista_consulta['consulta'])
-    if int(lista_consulta['idade'])>=18:
-        if lista_consulta['sexo']=='f':
-            print()
+   for lista_consulta in lista_consulta_funcao:
+      if int(lista_consulta['codigo']) == numero:
+
+         if int(lista_consulta['idade']) >= 18:
+            if lista_consulta['sexo'] == 'f':
+               print(f"Nome: {lista_consulta['nome']} valor ingresso: R$ 15,00 ")
+            else:
+               print(f"Nome: {lista_consulta['nome']} valor ingresso: R$ 35,00 ")
+         else:
+            print(' Não Pode Entrar!')
+
+
+lista1 = ler_cadastro()
+lista_festa(lista1)
+
+while True:
+   a=int(input('Digite um numero: '))
+   consulta(lista1,a)
