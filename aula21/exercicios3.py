@@ -22,6 +22,6 @@ print(a)
 listaum=[]
 for num in a:
     mm=num*5
-    print(mm)
+    #print(mm)
     listaum.append(mm)
-    print(listaum)
+print(listaum)
