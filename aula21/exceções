@@ -107,7 +107,7 @@
 #            +-- ResourceWarning
 
 
-# Quais as formas de executar a excessão?
+# Quais as formas de executar a exceção?
 # 
 
 try:
@@ -137,7 +137,7 @@ else:
     # quando o break for acionado no try.
 finally:
     # Este código sempre será executado, independente se há erro ou não.
-    # É uma forma de fechar coneção ou arquivo (.close()) autométicamente.
+    # É uma forma de fechar conexão ou arquivo (.close()) autométicamente.
 
 
 
@@ -159,6 +159,7 @@ else:
 finally:
     print('Fim!')
 
+###########################################################################################################
 
 try:
     inteiro = int(input('Digite um número: '))
