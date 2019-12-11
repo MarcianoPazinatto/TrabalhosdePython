@@ -46,3 +46,5 @@ pessoa1.comp(True)
 print(f'Bens: {pessoa1.bens}')
 print(f'carteira: {pessoa1.carteira}')
 print(f'divida: {pessoa1.divida}')
+
+

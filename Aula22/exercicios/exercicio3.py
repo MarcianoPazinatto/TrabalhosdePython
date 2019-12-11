@@ -1,6 +1,7 @@
 # Aula 21 - 09-12-2019
 # # Como Tratar e Trabalhar Erros!!!
 
+
 # Dica: O mais importante é conseguir fazer! Não importa como chegou ao resultado e sim o resultado!
 
 # Dica2: na função .open() você pode escolher entre 'r' para ler, 'w' para sobrescrever e criar um 
@@ -26,3 +27,43 @@
 #  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula 21- Ecessões como é!
 
 
+# arqui=open('C:\Dados\GitHub\python\TrabalhosdePython\Aula22\exercicios\cadastro2.txt', 'r')
+# print(arqui.readline())
+# arqui.close()
+
+
+class Cadastro:
+
+    def __ini__ (self):
+        pass
+    def linha(self):
+        lista=[]        
+        arquivo = open('C:\Dados\GitHub\python\TrabalhosdePython\Aula22\exercicios\cadastro2.txt','r')
+        for linhas in arquivo:
+            linhas = linhas.strip().split(';')
+            dicionario = {}
+            dicionario['cod']=linhas[0]
+            dicionario['nome']=linhas[1]
+            dicionario['idade']=linhas[2]
+            dicionario['sexo']=linhas[3]
+            dicionario['email']=linhas[4]
+            dicionario['cpf']=linhas[5]
+        lista.append(dicionario)  
+        arquivo.close()  
+        return lista
+        
+        
+        
+a = Cadastro()
+aa=a.linha()
+print(aa)   
+
+
+
+
+# #     def abrir(self):
+# #         arquivo = open('cadastro2.txt','r')                
+# #         arquivo.close()  
+
+
+# a = Cadastro(cadastro)        
