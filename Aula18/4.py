@@ -34,7 +34,7 @@ cerveja = (('marca', 'tipo', 'ibu','preço'),
 
 def cerv(cerveja):
     lista=[]
-    for j in range(1,5):
+    for j in range(len(cerveja)):
         dicionario={'marca':cerveja[j][0],'tipo':cerveja[j][1], 'ibu':cerveja[j][2], 'preço':cerveja[j][3]}
         lista.append(dicionario)
     return lista   
