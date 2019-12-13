@@ -36,8 +36,7 @@ class Cliente:
         self.idade = int(input('Digite o nome: '))
         self.telefone = input('Digite o nome: ')
         self.email = input('Digite o nome: ')
-        self.endereco = input('Digite o nome: ')
-        
+        self.endereco = input('Digite o nome: ')      
 
         
         '''
@@ -48,18 +47,22 @@ class Cliente:
 
     def limite_credito(self,valor):
 
-        valor = - 1000
-        
+        self.credito -= valor
+        self.saldo += valor
+        while self.credito >= -10:
+            self.cliente_devedor = False
+        self.cliente_devedor = True    
+
         '''
         O crédito é o valor máximo que o cliente pode ter de saldo negativo.
-        Este metodo altera o valor tanto para aumentar o crédito quanto para 
+        Este metodo, altera o valor tanto para aumentar o crédito quanto para 
         diminuir ou eliminar o crédito.
 
         Este valor deve ser passado como número negativo (ex: -50.00) para o atributo
         credito
 
         Se diminuir o crédito (exemplo de -50 para -10) e o 
-        cliente ficar com o saldo menor que o cédito (exemplo saldo = -20 e cédito -10)
+        cliente ficar com o saldo menor que o crédito (exemplo saldo = -20 e cédito -10)
         o cliente_devedor fica True
 
         Se o cliente_devedor estiver True, o crédito pode ser diminuido porem não aumentado.
@@ -68,6 +71,8 @@ class Cliente:
         pass
 
     def dinheiro(self,valor):
+        valor=float(input('Digite o valor do emprestimo: '))                
+        
         '''
         Este metodo serve para adicionar/remover valor em R$ para o atributo saldo para 
         o cliente.
@@ -86,7 +91,7 @@ class Cliente:
         Se o cliente_devedor estiver True e o cliente depositar dinheiro suficiente para
         o saldo ficar maior ou igual a 0 o cliente_devedor deve ser alterado para False.
         '''
-        pass
+        
 
     def __eq__(self,valor):
         '''
