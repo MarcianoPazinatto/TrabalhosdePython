@@ -9,6 +9,7 @@ from geradorlista import lista_simples_impura
 from geradorlista import embaralhar
 from geradorlista import embaralhar_int_str_hard
 from geradorlista import binario
+import copy
 
 
 
@@ -30,10 +31,8 @@ from geradorlista import binario
 # [1, 2, 3, 4, 5, 6]
 
 lista1 = [lista_simples_int() ,lista_simples_int(), lista_simples_int()]
-# nested_sum = ((sum(lista1[0]))+(sum(lista1[1]))+(sum(lista1[2])))
-# print(f'A soma dos números das três listas é {nested_sum}')
-lista = nested_sum(lista1)
-print(lista)
+
+
 # 2) Com as seguintes listas, transforme em uma string para poder gravar (futuramente) em um arquivo!
 
 lista_cadastro = ['codigo', 'cpf', 'nome_completo', 'data_de_nascimento',
@@ -53,49 +52,101 @@ lista_cadastros = [['1', 'Arnaldo', '23', 'm', 'alexcabeludo2@hotmail.com', '014
 
 
 
-# 4) Crie uma função que solicite 5 nomes e retorne uma lista com todos eles
+# 4) Crie uma função que solicite 5 nomes e retorne uma lista com todos eles.
+Nomes = []
+def nomes(l):    
+    for i in range(0,5):
+        nomex = input('Digite o nome: ')
+        Nomes.append(nomex)
+    return Nomes 
+
+a = nomes(Nomes)
+print(a)
+
 
 
 
 # 5) Com a lista "Nomes", feita no exercicio 4 (anterior) faça uma cópia para 'Nomes2' e adicione 
 # o nome "Pedro Paulada" no "Nomes" e "Paulo Cacetada" no "Nomes2"
-
-
+Nomes2 = Nomes.copy()
+Nomes2=Nomes.copy()
+Nomes2.append('Paulo Cacetada')
+Nomes.append('Pedro Paulada')
+print(Nomes2)
+print(Nomes)
 
 # 6) Com a lista 'lista_aninhada' faça uma cópia e nomeie como 'lista_aninhada_2'. Na lista_aninhada
 # adicione ao lado do número 9 o número 10. Na lista_aninhada_2 adicione ao lado do número 8 a frase 
 # "Aqui não pode ter o número 10!"
 
 lista_aninhada = [1,2,3,[4,5,[7,[9],8],6]]
-
+lista_aninhada3 = copy.deepcopy(lista_aninhada)
+lista_aninhada2 = copy.deepcopy(lista_aninhada)
+lista_aninhada[3][2][1].append(10)
+lista_aninhada2[3][2].insert(2,'Aqui não pode ter o número 10!')
+print(lista_aninhada)
+print(lista_aninhada2)
 
 
 # 7) Continuando o exercicio, adicione a lista Nomes (exercicio 4) na lista_aninhada entre os números
 # 2 e o 3. Na lista_aninhada_2 adicione a "Pedro Pedroca" entre os números 4 e 5. 
 # Adicione na lista_aninhada, entre os números 1 e 2, a frase 'um, dois' e na lista_aninhada_2, 
 # entre os números 1 e 2 a frase 'Adiciono qualquer coisa em qualquer lugar nesta lista!'
-
-
+lista_aninhada.insert(2,Nomes)
+print(lista_aninhada)
+lista_aninhada.insert(1,'um, dois')
+lista_aninhada2.insert(1,'adiciono qualquer coisa em qualquer lugar nesta lista!' )
+print(f'lista_aninhada {lista_aninhada}')
 # 8) Com a lista1, ordene os números de maior para menor!
 
 lista1 = lista_simples_int(100)
+lista1.sort(reverse=True)
+# print(lista1)
 
 
 # 9) Com a lista2, ordene os números de menor para maior!
 
 lista2 = lista_simples_int(100)
+lista2.sort()
+# print(lista2)
 
 # 10) Usando o metodo, adicione a lista1 e lista2 (já ordenadas) na lista0.
 
 lista0 = []
+def listt():
+    lista0.append(lista2)
+    lista0.append(lista1)
+    return lista0
+a = listt()    
+print(a)
 
 # 11) Ordene a lista0 e diga qual é o maior valor, menor valor e em quais das listas (lista1 ou lista2)
 # estes pertencem.
+lis1Ma = (max(lista0[0]))
+lis2Ma = (max(lista0[1]))
+lis1Me = (min(lista0[0]))
+lis2Me = (min(lista0[1]))
+if lis1Ma > lis2Ma:
+    print(f'O maior número da Lista0 é {lis1Ma} na lista 1')
+else:    
+    print(f'O maior número da Lista0 é {lis2Ma} na lista 2')   
 
+if lis1Me > lis2Me:
+    print(f'O maior número da Lista0 é {lis1Me} na lista 1')
+else:    
+    print(f'O maior número da Lista0 é {lis2Me} na lista 2')
 
 # 12) Com a lista_aninhada e lista_aninhada2, do exercicio 7, remova todas as alterações que nelas foram
 # colocadas. Salve os dados removidos em uma lista e imprima na tela cada item em uma linha
 # usando o f-string (use o .pop() )
+# lista_aninhada = [1,2,3,[4,5,[7,[9],8],6]]
+# 
+lista_aninhada.pop([3][0])
+lista_aninhada.pop(1)
+lista_aninhada.pop([5][0])
+
+print(lista_aninhada)
+    
 
 
 
