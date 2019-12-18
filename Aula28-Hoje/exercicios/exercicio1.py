@@ -55,5 +55,14 @@ texto = '''1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117
 48;Paola;50;m;chel_bdl@hotmail.com;024966119466
 49;Silvio;45;m;laurim_crazyboy@hotmail.com;033986392040
 50;Vanusa;23;m;aline_gatinha_13@yahoo.com.br;015938655596'''
+def tratamento (): 
+    lista = []   
+    cadastro = texto.split('\n')  
+    for pessoa in cadastro:
+        texto1 = pessoa.split(';')    
+        dicionario={'codigo':texto1[0],'nome':texto1[1],'idade':texto1[2],'sexo':texto1[3], 'email':texto1[4], 'cpf':texto1[5]}
+        lista.append(dicionario) 
+    return lista
 
-
+a = tratamento()
+print(a)    

@@ -50,7 +50,7 @@ lista_cadastrados1 = ['2', '22222222222', 'Paulo Roberto', '23/01/89',
 
 lista_cadastros = [['1', 'Arnaldo', '23', 'm', 'alexcabeludo2@hotmail.com', '014908648117'], ['2', 'Haroldo', '44', 'f', 'baratarebelde@gmail.com', '050923172729'], ['3', 'Pilar', '50', 'm', 'wanderson10sp@gmail.com', '018937341049'], ['4', 'Suzete Salvador', '45', 'f', 'eladiomp2@yahoo.com.br', '056928409823'], ['5', 'Riane', '37', 'f', 'orkutzimpower@terra.com.br', '018916004377'], ['6', 'Waldir', '34', 'f', 'nandah.s2@bol.com.br', '058903756441'], ['7', 'Lilian', '22', 'f', 'arydoido@gmail.com', '031958621596'], ['8', 'Matilde', '20', 'm', 'eu_kaka_@hotmail.com', '012941959390'], ['9', 'Samanta', '19', 'm', 'carro.tuning@yahoo.com.br', '028964480437'], ['10', 'Margarida', '30', 'm', 'paraaconta.08@hotmail.com', '047903547580'], ['11', 'Evelyn', '31', 'm', 'joaosilvaticudo@gmail.com', '053958638386'], ['12', 'Alessio', '29', 'm', 'w.nill02@gmail.com', '033961294774'], ['13', 'Yolanda', '25', 'm', 'patty_karen2005@hotmail.com', '027903312626'], ['14', 'Germana', '33', 'f', 'jarlinhatopdelinhagv@hotmail.com', '053964603415'], ['15', 'Helio', '33', 'f', 'juh.slim@gmail.com', '046997316461'], ['16', 'Liége', '21', 'f', 'gledsonlds@hotmail.com', '056992948431'], ['17', 'Yan', '42', 'm', 'lucapratto@yahoo.com.br', '016963562866'], ['18', 'Silvain', '50', 'f', 'hie.s2@hotmail.com', '021963399433'], ['19', 'Brian', '33', 'f', 'juliagabrielle06@hotmail.com', '027962676732'], ['20', 'Deoclides', '40', 'f', 'patriciamascena@gmail.com', '012961047979'], ['21', 'Jaqueline', '32', 'm', 'aninha183@hotmail.com', '014958997782'], ['22', 'Rosamaria', '45', 'f', 'j_leosao@hotmail.com', '026944672627'], ['23', 'Carla', '42', 'm', 'jhasdfjo@hotmail.com', '046976625208'], ['24', 'Aida Santos', '30', 'f', 'nayara.cristinap@hotmail.com', '034920819199'], ['25', 'Thomas', '19', 'm', 'jfdslinda@bol.com.br', '030974027667'], ['26', 'Naiara', '23', 'm', 'darknees_666@ig.com.br', '018976696717'], ['27', 'Karyne', '17', 'm', 'garotosonhador_1@hotmail.com', '054984689319'], ['28', 'Alenis Dias', '43', 'f', 'vi_vi_cristinaf@hotmail.com', '034980886309'], ['29', 'Grace', '38', 'm', 'amandakell@uol.com.br', '041932906720'], ['30', 'Zacarias', '31', 'm', 'loca.som@hotmail.com', '041926007066']]
 
-
+print('*'*50)
 
 # 4) Crie uma função que solicite 5 nomes e retorne uma lista com todos eles.
 Nomes = []
@@ -63,6 +63,7 @@ def nomes(l):
 a = nomes(Nomes)
 print(a)
 
+print('*'*50)
 
 
 
@@ -74,7 +75,7 @@ Nomes2.append('Paulo Cacetada')
 Nomes.append('Pedro Paulada')
 print(Nomes2)
 print(Nomes)
-
+print('*'*50)
 # 6) Com a lista 'lista_aninhada' faça uma cópia e nomeie como 'lista_aninhada_2'. Na lista_aninhada
 # adicione ao lado do número 9 o número 10. Na lista_aninhada_2 adicione ao lado do número 8 a frase 
 # "Aqui não pode ter o número 10!"
@@ -87,7 +88,7 @@ lista_aninhada2[3][2].insert(2,'Aqui não pode ter o número 10!')
 print(lista_aninhada)
 print(lista_aninhada2)
 
-
+print('*'*50)
 # 7) Continuando o exercicio, adicione a lista Nomes (exercicio 4) na lista_aninhada entre os números
 # 2 e o 3. Na lista_aninhada_2 adicione a "Pedro Pedroca" entre os números 4 e 5. 
 # Adicione na lista_aninhada, entre os números 1 e 2, a frase 'um, dois' e na lista_aninhada_2, 
@@ -97,12 +98,13 @@ print(lista_aninhada)
 lista_aninhada.insert(1,'um, dois')
 lista_aninhada2.insert(1,'adiciono qualquer coisa em qualquer lugar nesta lista!' )
 print(f'lista_aninhada {lista_aninhada}')
+print('*'*50)
 # 8) Com a lista1, ordene os números de maior para menor!
 
 lista1 = lista_simples_int(100)
 lista1.sort(reverse=True)
 # print(lista1)
-
+print('*'*50)
 
 # 9) Com a lista2, ordene os números de menor para maior!
 
@@ -111,7 +113,7 @@ lista2.sort()
 # print(lista2)
 
 # 10) Usando o metodo, adicione a lista1 e lista2 (já ordenadas) na lista0.
-
+print('*'*50)
 lista0 = []
 def listt():
     lista0.append(lista2)
@@ -119,7 +121,7 @@ def listt():
     return lista0
 a = listt()    
 print(a)
-
+print('*'*50)
 # 11) Ordene a lista0 e diga qual é o maior valor, menor valor e em quais das listas (lista1 ou lista2)
 # estes pertencem.
 lis1Ma = (max(lista0[0]))
@@ -135,19 +137,23 @@ if lis1Me > lis2Me:
     print(f'O maior número da Lista0 é {lis1Me} na lista 1')
 else:    
     print(f'O maior número da Lista0 é {lis2Me} na lista 2')
-
+print('*'*50)
 # 12) Com a lista_aninhada e lista_aninhada2, do exercicio 7, remova todas as alterações que nelas foram
 # colocadas. Salve os dados removidos em uma lista e imprima na tela cada item em uma linha
 # usando o f-string (use o .pop() )
 # lista_aninhada = [1,2,3,[4,5,[7,[9],8],6]]
 # 
+print(f'isso aqui ohhh antes{lista_aninhada}')
 lista_aninhada.pop([3][0])
 lista_aninhada.pop(1)
-lista_aninhada.pop([5][0])
+#lista_aninhada.pop([3][2][1][1])
+# a = lista_aninhada[3][2][1][1]
+lista_aninhada[3][2][1].pop()
 
-print(lista_aninhada)
+print(f'isso aqui ohhh{lista_aninhada}')
+print(lista_aninhada[3])
     
-
+print('*'*50)
 
 
 # 13) Remova, usando o .remove(), os seguintes itens destas listas:
@@ -161,16 +167,22 @@ print(lista_aninhada)
 # 13.8) 11111111111
 # 13.9) cidade
 # 13.10) data_de_nascimento
+print('*'*50)
 
 lista_cadastro = ['codigo', 'cpf', 'nome_completo', 'data_de_nascimento',
                   'estado', 'cidade', 'cep', 'bairro', 'rua', 'numero', 'complemento']
-
+lista_cadastro.remove('cpf')
+print(lista_cadastro)                  
+print('*'*50)
 lista_cadastrados = ['1', '11111111111', 'João Carlos', '12/12/90',
                   'SC', 'Camboriú', '8833', 'Tabuleiro', 'Cerejeiras', '45', 'ap 101']
-
+lista_cadastrados.remove('Camboriú')
+print(lista_cadastrados)
+print('*'*50)
 lista_cadastrados1 = ['2', '22222222222', 'Paulo Roberto', '23/01/89',
                   'SC', 'Blumenau', '99999', 'Velha', '7 de setembro', '55', '']
-
+lista_cadastrados1.remove('Paulo Roberto')
+print(lista_cadastrados1)
 
 
 # 14) Com a lista_fusao mostre com f-strig e o metodo .index() a posição dos seguintes elementos:
@@ -190,12 +202,15 @@ lista_fusao = ['codigo', 'cpf', 'nome_completo', 'data_de_nascimento',
                   'SC', 'Camboriú', '8833', 'Tabuleiro', 'Cerejeiras', '45', 'ap 101',
                   '2', '22222222222', 'Paulo Roberto', '23/01/89',
                   'SC', 'Blumenau', '99999', 'Velha', '7 de setembro', '55', '']
+print(f"{lista_fusao.index('cidade',0,20)},{lista_fusao.index('João Carlos',0,20)},{lista_fusao.index('Camboriu',0,20)},{lista_fusao.index('12/12/90',0,20)},
+{lista_fusao.index('99999',0,20)}")
 
 
 # 15) Usando o metodo .index(), Crie uma função que localize a posição dos seguintes nomes: 
 # Germana, Deoclides, Zacarias, Karyne, Helio, Silvain, Aida Santos
 # Esta função deve receber como parametro a lista_cadastros e o nome. Deve retornar uma lista contendo
 # o endereço do nome na lista_cadastros. 
+
 # Exemplo:
 
 # >>> lista = localize(lista_cadastros,'Alenis Dias')
