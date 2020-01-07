@@ -24,22 +24,6 @@
 #tripulação de cabine = chefe de serviço de voo, comissária1 e comissária2
 #passageiros = policíal e presidiario
 
-def salvar_aviao(aeroporto):
-    arq=open('aviao.txt','w')
-    arq.write(f"{aeroporto}\n")
-    arq.close()
-
-def ler():
-    aeroporto1=[]
-    arq=open('aviao.txt','r')
-    for linha in arq:
-        linha=linha.strip()
-        linha_linha=linha.split(';')          
-        aeroporto1.append(linha)
-    arq.close()  
-    return aeroporto1
-
-
 aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
                             'comissaria_B','policial','presidiario']
 aviao = []
@@ -73,8 +57,3 @@ def viagem ():
 
 for i in range(0,7):
     (viagem())
-
-
-salvar_aviao(aviao)
-a=ler()
-print(a)
