@@ -1,0 +1,8 @@
+piloto
+oficial_A
+oficial_B
+chefe
+comissaria_A
+comissaria_B
+policial
+presidiario

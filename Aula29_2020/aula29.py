@@ -27,33 +27,36 @@
 #*************************** salvando o arquivo em txt ************
 
 def salvar_aviao(aeroporto):
-    arq = open('aviao.txt','w')
+    arq = open('C:\\marciano\\TrabalhosdePython\\Aula29_2020\\avião.txt','w')
     for pessoa in aeroporto:
         arq.write(f'{pessoa}\n')
     arq.close()
+
 #*************************** lendo e salvando em uma lista************
-def ler():
-    aeroporto1=[]
-    arq = open('aviao.txt','r')
+aeroporto = []
+
+def ler():    
+    arq = open('C:\\marciano\\TrabalhosdePython\\Aula29_2020\\aeroporto.txt','r')
     for linha in arq:
         linha = linha.strip()
-        aeroporto1.append(linha)      
+        aeroporto.append(linha)      
     arq.close() 
-    return aeroporto1  
+    return aeroporto  
 
 #*************************** lista das pessoas que estão no aeroporto ************
-aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
-                            'comissaria_B','policial','presidiario']
+
+# aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
+#                             'comissaria_B','policial','presidiario']
 aviao = []
 
 #*************************** função que enviara do aeroporto ao avião ************
+
 def viagem ():  
 
     if len(aeroporto) <= 2:  
         print(f'Viagem ao avião: {aeroporto[0]} e {aeroporto[1]}') 
         aviao.append(aeroporto.pop(0))
-        aviao.append(aeroporto.pop(0))
-                        
+        aviao.append(aeroporto.pop(0))                        
                 
     else:
         if aeroporto[1]=='piloto' or aeroporto[1]=='chefe' or aeroporto[1]=='policial':
@@ -73,12 +76,16 @@ def viagem ():
         print('\n') 
     else:
         print(f'Todos no avião {aviao}')  
+ler()
 
 for i in range(0,7):
     (viagem())
+
 print('\n')
+
 salvar_aviao(aviao)
 
-a=ler()
+
+
 #*************************** imprimindo o txt ************
-print(a)
+
