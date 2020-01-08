@@ -24,18 +24,20 @@
 #tripulação de cabine = chefe de serviço de voo, comissária1 e comissária2
 #passageiros = policíal e presidiario
 
+#*************************** lista das pessoas que estão no aeroporto ************
 aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
                             'comissaria_B','policial','presidiario']
 aviao = []
-def viagem ():
-  
+#*************************** função que enviara do aeroporto ao avião ************
+def viagem ():  
 
-    if len(aeroporto) <= 2:   
+    if len(aeroporto) <= 2:  
+        print(f'Viagem ao avião: {aeroporto[0]} e {aeroporto[1]}') 
         aviao.append(aeroporto.pop(0))
-        aviao.append(aeroporto.pop(0))                
+        aviao.append(aeroporto.pop(0))                        
                 
     else:
-        if aeroporto[1]=='piloto'or aeroporto[1]=='chefe' or aeroporto[1]=='policial':
+        if aeroporto[1]=='piloto' or aeroporto[1]=='chefe' or aeroporto[1]=='policial':
             aeroporto[0],aeroporto[1]=aeroporto[1],aeroporto[0]
             print(f'Estão no aeroporto: {aeroporto}')
             print(f'Viagem ao avião: {aeroporto[0]} e {aeroporto[1]}')
@@ -53,7 +55,6 @@ def viagem ():
     else:
         print(f'Todos no avião {aviao}')  
 
-
-
 for i in range(0,7):
     (viagem())
+print('\n')
