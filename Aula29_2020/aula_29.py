@@ -25,8 +25,8 @@
 #passageiros = policíal e presidiario
 
 #*************************** lista das pessoas que estão no aeroporto ************
-aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
-                            'comissaria_B','policial','presidiario']
+# aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
+#                             'comissaria_B','policial','presidiario']
 aviao = []
 #*************************** função que enviara do aeroporto ao avião ************
 def viagem ():  
