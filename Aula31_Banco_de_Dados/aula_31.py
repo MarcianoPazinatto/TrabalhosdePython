@@ -20,6 +20,13 @@ cursor = conexao.cursor()
 cursor.execute('SELECT * FROM MARCIANO1')
 pessoas = cursor.fetchall()
 
+
+cursor = conexao.cursor()
+cursor.execute('SELECT NOME FROM MARCIANO1')
+L = cursor.fetchall()
+
 for p in pessoas:
     print(p)
-
+    
+for I in L:
+    print(I)
