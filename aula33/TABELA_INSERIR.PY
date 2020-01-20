@@ -72,24 +72,25 @@ cursor = conexao.cursor()
 # ,(int(input('Digite a idade: '))),(input('Digite o email: ')))
 # salvar_end(conexao,cursor,(input('Digite a rua: ')), (input('Digite o bairro: ')), (input('Digite a cidade: ')))
 # deletar_end(conexao,cursor,(input('Digite o id do endereço que deseja apagar: ')))
-while True:
-    print('''Digite 
-    (1) para inserir nova pessoa
-    (2) para deletar pessoa
-    (3) para visualizar''')
-    a = int(input('Digite uma opção: '))
-    if a == 1:
-        salvar(conexao, cursor, (input('Digite o nome: ')), (input('Digite o sobrenome '))
-        ,(int(input('Digite a idade: '))),(input('Digite o email: ')))
-        time.sleep(1)
-    elif a == 2:
-        deletar(conexao, cursor,(int(input('Digite o id que deseja deletar: '))))
-    elif a==3:
-        print(f'*'*70)
-        listar_todos(cursor)
-        print(f'*'*70)
-        time.sleep(3)
-    else: 
-        print('******Opção errada******')
-        time.sleep(2)   
+
+# while True:
+#     print('''Digite 
+#     (1) para inserir nova pessoa
+#     (2) para deletar pessoa
+#     (3) para visualizar''')
+#     a = int(input('Digite uma opção: '))
+#     if a == 1:
+#         salvar(conexao, cursor, (input('Digite o nome: ')), (input('Digite o sobrenome '))
+#         ,(int(input('Digite a idade: '))),(input('Digite o email: ')))
+#         time.sleep(1)
+#     elif a == 2:
+#         deletar(conexao, cursor,(int(input('Digite o id que deseja deletar: '))))
+#     elif a==3:
+#         print(f'*'*70)
+#         listar_todos(cursor)
+#         print(f'*'*70)
+#         time.sleep(3)
+#     else: 
+#         print('******Opção errada******')
+#         time.sleep(2)   
 
