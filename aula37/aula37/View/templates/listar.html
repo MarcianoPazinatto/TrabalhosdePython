@@ -31,9 +31,11 @@
                     <td>{{ p[2] }}</td>
                     <td>{{ p[3] }}</td>
                     <td>{{ p[4] }}</td>
+                    <td>{{ p[5] }}</td>
+                    
                     <td>
-                        <a href="/editar?id={{ p[0] }}" class="editar">Editar</a>
-                        <a href="/excluir?id={{ p[0] }}&id_end={{ p[5] }}" class="excluir">Excluir</a>
+                        <a href="/cadastrar?id={{ p[0] }}" class="editar">Editar</a>
+                        <a href="/excluir?id={{ p[0] }}" class="excluir">Excluir</a>
                     </td>
                 </tr>
                 {% endfor %}

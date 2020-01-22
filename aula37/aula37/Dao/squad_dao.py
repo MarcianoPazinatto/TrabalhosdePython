@@ -26,7 +26,7 @@ class SquadDao:
         (
             '{squad.nome}',
             '{squad.descricao}',
-            '{squad.numeropessoas}',
+            {squad.numeropessoas},
             '{squad.linguagembackend}',
             '{squad.frameworkfrontend}'
 
@@ -41,7 +41,7 @@ class SquadDao:
         SET
             NOME = '{squad.nome}',
             SOBRENOME = '{squad.descricao}',
-            NUMEROPESSOAS = '{squad.numeropessoas}',
+            NUMEROPESSOAS = {squad.numeropessoas},
             LINGUAGEMBACKEND = '{squad.linguagembackend}',
             FRAMEWORKFRONTEND = '{squad.frameworkfrontend}'
         WHERE ID = {squad.id}
