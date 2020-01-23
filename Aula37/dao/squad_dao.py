@@ -12,7 +12,13 @@ class SquadDao:
 
     def listar_todos(self):
         #----- Criação do comando SQL e passado para o cursor
-        comando_sql_select = "SELECT * FROM MARCIANO_SQUAD"
+        comando_sql_select = f""" SELECT * FROM MARCIANO_SQUAD AS S
+        INNER JOIN MARCIANO_FRAMEWORK AS A ON S.FRAMEWORKFRONTEND= A.ID
+        INNER JOIN MARCIANO_LINGUAGEM AS B ON S.LINGUAGEMBACKEND = B.ID
+        INNER JOIN MARCIANO_SGBD AS C ON S.SGBD = C.ID
+        
+        
+        """
         self.cursor.execute(comando_sql_select)
         #---- Pega todos os resultados da execução do comando SQL e armazena em uma variável
         resultado = self.cursor.fetchall()
