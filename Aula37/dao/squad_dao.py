@@ -26,7 +26,13 @@ class SquadDao:
 
     def buscar_por_id(self, id):
         #----- Criação do comando SQL e passado para o cursor
-        comando = f"SELECT * FROM MARCIANO_SQUAD WHERE ID= {id}"
+        comando = f""" SELECT * FROM MARCIANO_SQUAD AS S
+        INNER JOIN MARCIANO_FRAMEWORK AS A ON S.FRAMEWORKFRONTEND= A.ID
+        INNER JOIN MARCIANO_LINGUAGEM AS B ON S.LINGUAGEMBACKEND = B.ID
+        INNER JOIN MARCIANO_SGBD AS C ON S.SGBD = C.ID = {id}
+        
+        
+        """
         self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
         return resultado
