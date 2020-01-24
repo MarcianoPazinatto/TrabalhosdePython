@@ -1,7 +1,7 @@
 import MySQLdb
 from model.sgbd import Sgbd
 
-class SquadDao:
+class SgbdDao:
 
     def __init__(self):
         #----- Configurar a conexão
@@ -11,7 +11,7 @@ class SquadDao:
 
     def listar_todos(self):
         #----- Criação do comando SQL e passado para o cursor
-        comando_sql_select = "SELECT * FROM MARCIANO_SQUAD AS P LEFT JOIN MARCIANO_FRAMEWORK AS E ON P.FRAMEWORKFRONTEND = E.ID "
+        comando_sql_select = "SELECT * FROM MARCIANO_SGBD"
         self.cursor.execute(comando_sql_select)
         #---- Pega todos os resultados da execução do comando SQL e armazena em uma variável
         resultado = self.cursor.fetchall()
