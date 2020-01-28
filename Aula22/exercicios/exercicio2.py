@@ -56,7 +56,7 @@ class Cliente:
 
 pessoa = Cliente(dadobruto)
 pessoa.listar()
-pessoa.salvar()
+pessoa.salvar(nome = 1)
 pessoa.atualizar()
 
 print(f'codigo: {pessoa.cod} Nome: {pessoa.nome}, Idade: {pessoa.idade} Sexo: {pessoa.sexo} Telefone: {pessoa.telefone} email {pessoa.email}')
