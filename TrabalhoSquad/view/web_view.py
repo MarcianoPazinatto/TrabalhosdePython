@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
 import sys
-sys.path.append('/marciano/TrabalhosdePython/Aula37pronto_trabalhoSquad')
+sys.path.append('/marciano/TrabalhosdePython/TrabalhoSquad')
 from controller.squad_controller import SquadController
 from controller.framework_controller import FrameworkController
 from controller.linguagem_controller import LinguagemController
