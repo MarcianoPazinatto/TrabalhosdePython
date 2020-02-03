@@ -1,12 +1,12 @@
 from flask import Flask
 from flask_restful import Api
 # import controllers
-from controllers.controller_aprendendo import Aprendendo
+from controllers.controller_aprendendo import Pessoa
 
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(Aprendendo,'/api/teste1')
+api.add_resource(Pessoa,'/api/teste1')
 
 @app.route('/')
 def inicio():
