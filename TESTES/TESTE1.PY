@@ -14,8 +14,12 @@
 #
 # my_function(a)
 # my_function(livros)
+
 def criar ():
     lista = []
     nome = input('Digite o nome: ')
     idade = int('Digite a idade: ')
+
     lista.append(nome)
+
+
