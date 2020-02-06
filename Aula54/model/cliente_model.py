@@ -19,3 +19,4 @@ class ClienteModel(BaseAlchemy): #cria a classe e aponta a declaração
 
     def __str__(self):
         return " {}, {}, {}, {}, {}".format(self.id, self.nome, self.sobrenome, self.idade, self.sexo)
+    # aponta a estrutura da tabela conforme cada coluna
