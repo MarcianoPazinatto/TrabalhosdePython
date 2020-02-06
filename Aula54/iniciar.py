@@ -10,7 +10,7 @@
 from Aula54.dao.cliente_dao import ClienteDao
 
 
-dao = ClienteDao()
+dao = ClienteDao() #atribui ao dao a classe ClienteDao
 clientes = dao.list_all()
 print(clientes)
 for c in clientes:
