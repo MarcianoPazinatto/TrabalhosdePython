@@ -11,8 +11,9 @@ class BaseDao:
 
     def list_all(self):
         list = []
-        list_model =self.session.query(self.table).all()
+        list_model = self.session.query(self.table).all()
         for m in list_model:
+            m = m.serialize()
             list.append(m)
         return list
 
@@ -33,5 +34,3 @@ class BaseDao:
         self.session.delete(self.get_by_id(id))
         self.session.commit()
         return f"objeto deletado com sucesso!"
-
-
