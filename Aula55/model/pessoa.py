@@ -9,5 +9,3 @@ class Pessoa(Base):
     sobrenome = db.Column(db.String(length=100))
     data_nascimento = db.Column(db.DATE)
     naturalidade = db.Column(db.String(length=100))
-
-
