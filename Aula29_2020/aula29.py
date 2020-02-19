@@ -33,7 +33,7 @@ def salvar_aviao(aeroporto):
     arq.close()
 
 #*************************** lendo e salvando em uma lista************
-aeroporto = []
+aeroporto = list()
 
 def ler():    
     arq = open('C:\\marciano\\TrabalhosdePython\\Aula29_2020\\aeroporto.txt','r')
@@ -47,7 +47,7 @@ def ler():
 
 # aeroporto = ['piloto','oficial_A','oficial_B','chefe','comissaria_A',
 #                             'comissaria_B','policial','presidiario']
-aviao = []
+aviao = list()
 
 #*************************** função que enviara do aeroporto ao avião ************
 

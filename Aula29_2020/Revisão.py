@@ -5,4 +5,6 @@ pessoasL = ['Gustavo', 'Maykon', 'Josué']
 pessoasT = ('Gustavo', 'Maykon','Josué')
 
 #dicionario
-pessoasD = ('nome':'Gustavo','prof':'Maykon')
+pessoasD = {'nome':'Gustavo','prof':'Maykon'}
+
+print(pessoasD)

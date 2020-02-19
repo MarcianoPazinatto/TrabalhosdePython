@@ -1,4 +1,4 @@
-from aula59_1 import Calc
+from aula import Calc
 
 class Teste:
     def __init__(self):
