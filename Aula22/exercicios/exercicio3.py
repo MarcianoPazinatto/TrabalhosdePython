@@ -24,7 +24,7 @@
 # 4) Crie um metodo para atualizar o cadastro de um cliente qualquer pelo codigo cliente.
 # Após atualizar, salvar todos no arquivo "cadastro_atualizado.txt" (use o 'w' para sobrescrever o arquivo.)
 #
-#  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula 21- Ecessões como é!
+#  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula59_1 21- Ecessões como é!
 
 
 # arqui=open('C:\Dados\GitHub\python\TrabalhosdePython\Aula22\exercicios\cadastro2.txt', 'r')
@@ -90,7 +90,7 @@ Telefone: {pessoa['telefone']}
 # 4) Crie um metodo para atualizar o cadastro de um cliente qualquer pelo codigo cliente.
 # Após atualizar, salvar todos no arquivo "cadastro_atualizado.txt" (use o 'w' para sobrescrever o arquivo.)
 #
-#  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula 21- Ecessões como é!
+#  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula59_1 21- Ecessões como é!
     def atualizar(self,codigo):
          for pessoa in self.lista:
             if int(pessoa['codigo']) == codigo:
