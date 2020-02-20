@@ -38,6 +38,11 @@ class Teste:
             print("Teste de divisão passou")
 
 
+    def teste_set(self):
+        try:
+            assert self.c.set(2)
+            assert self.c.
+
 t = Teste()
 
 t.soma()
