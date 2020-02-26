@@ -1,4 +1,6 @@
 from Aula60.ForTwo.r2.local import Local
+
+
 class Fortwo:
     def __init__(self):
         self.__pessoas_permitidas = ['piloto', 'chefe de serviço','policial']

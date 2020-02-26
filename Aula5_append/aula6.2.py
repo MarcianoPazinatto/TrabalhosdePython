@@ -8,14 +8,14 @@ while d!=4:
         list.append(prod)
     if d==2:
         print(list)   
-    if d==4
+    if d==4:
         exit()
     
 print('cadastrar produtos Mercado Tech')
 produto=input('digite o produto')
 categoria=int(input('Informe 1 se for alcoólico e 2 se não for'))
-if categoria==1
+if categoria==1:
     print(f'O nome é {produto} é alcoólico')
 
-if categoria==2
+if categoria==2:
     print(f'o {produto} não é alcoólico')

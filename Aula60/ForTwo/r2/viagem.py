@@ -9,7 +9,9 @@ from Aula60.ForTwo.r2.fortwo import Fortwo
 terminal = {'descricao':'terminal', 'pessoas': ['piloto','oficial1','oficial2','chefe de serviço','comissário1','comissário2','policial','presidiario']}
 aviao = { 'descricao':'aviao', 'pessoas': [] }
 
+
 def viagem(motorista:str, passageiro:str, saida:dict, chegada:dict):
+
     fortwo = embarque(motorista, passageiro, saida)
     print(f"Saindo do {saida['descricao']}")
     print('Iniciando a viagem...')
@@ -20,7 +22,9 @@ def viagem(motorista:str, passageiro:str, saida:dict, chegada:dict):
     print(saida)
     print(chegada)
 
+
 def viagem2(pessoa1, pessoa2, origem:Local, destino:Local):
+
     fortwo = Fortwo()
     if origem.saida(pessoa2):
         if origem.saida(pessoa1):
@@ -42,9 +46,10 @@ def viagem2(pessoa1, pessoa2, origem:Local, destino:Local):
         print('Não permitido1')
 
 
-
 viagem2('policial','presidiário', Terminal(), Aviao())
-#viagem2('policial','', Aviao(), Terminal())
+
+
+# viagem2('policial','', Aviao(), Terminal())
 # viagem2('piloto','policial', Terminal(), Aviao())
 # viagem2('piloto','', Aviao(), Terminal())
 # viagem2('piloto','oficial1', Terminal(), Aviao())

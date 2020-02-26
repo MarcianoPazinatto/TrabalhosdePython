@@ -1,6 +1,7 @@
 from Aula60.ForTwo.r2.local import Local
 
 class Terminal(Local):
+
     def __init__(self):
         self.__pessoas = [
                         'piloto', 'oficial1', 'oficial2'
