@@ -8,10 +8,8 @@ for i in range(3):
     A.pop()
 print(A)
 
-# B = [1, 2, 3, 4]
-# K = 4
-
 B = [1, 2, 3, 4]
+# K = 4
 
 for i in range(4):
     B.insert(0,B[-1])

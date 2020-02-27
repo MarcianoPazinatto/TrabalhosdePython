@@ -25,6 +25,7 @@ a função deve retornar [9, 7, 6, 3, 8]. Foram realizadas três rotações:
     [3, 8, 9, 7, 6] -> [6, 3, 8, 9, 7]
     [6, 3, 8, 9, 7] -> [7, 6, 3, 8, 9]
     [7, 6, 3, 8, 9] -> [9, 7, 6, 3, 8]
+
 Por outro exemplo, dado
 
     A = [0, 0, 0]
